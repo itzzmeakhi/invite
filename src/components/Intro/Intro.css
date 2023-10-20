@@ -1,0 +1,53 @@
+.intro-section {
+  height: 100vh;
+  background-color: #74d4eb;
+  background-image: linear-gradient(90deg, #74d4eb 0%, #9fcce6 50%, #043a4a 100%);
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.intro-section .groom {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.intro-section .groom p {
+  font-family: 'Allura', sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 2px #043a4a;
+  color: #fff;
+}
+
+.intro-section .groom img {
+  width: 45%;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  transform: rotate(-10deg);
+}
+
+.intro-section .bride {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.intro-section .bride p {
+  font-family: 'Allura', sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 2px #043a4a;
+  color: #fff;
+}
+
+.intro-section .bride img {
+  width: 45%;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  transform: rotate(10deg);
+}

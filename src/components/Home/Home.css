@@ -1,0 +1,39 @@
+.home {
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, .15) url('./../../assets/bg-mobile.JPG');
+  background-blend-mode: darken;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.home .hashtag {
+  padding-top: 20px;
+  font-size: 20px !important;
+  color: #fff;
+}
+
+.home .text-section {
+  margin-top: 20px;
+}
+
+.home h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+.home h1 span {
+  font-size: 26px;
+  color: #ffdd59;
+}
+
+.home .para-txt {
+  margin-top: 8px;
+}
+
+.home p {
+  font-size: 22px;
+  letter-spacing: 2px;
+}

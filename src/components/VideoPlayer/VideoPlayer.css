@@ -1,0 +1,47 @@
+.video-player {
+  height: 100vh;
+  position: relative;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.video-player .video-responsive {
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-player .video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.video-player img {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-player .text-section p {
+  color: #04364A;
+  text-align: center;
+  font-size: 18px;
+}
+
+.video-player h3 {
+  color: #04364A;
+  text-align: center;
+  font-size: 26px;
+}
+
+.video-player p {
+  color: #04364A;
+  text-align: center;
+  font-size: 26px;
+}
