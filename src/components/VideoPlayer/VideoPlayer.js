@@ -21,6 +21,8 @@ const VideoPlayer = () => {
           title='savethedate'
           width='640' 
           height='360'
+          allowFullScreen='allowFullScreen'
+          frameBorder='0'
           src='https://www.youtube.com/embed/scwu2MTjRMU?rel=0&controls=1&modestbranding=0&cc_load_policy=0&iv_load_policy=3&autohide=0&showinfo=0&autoplay=0&enablejsapi=1'
           frameborder='0'
         ></iframe>
