@@ -11,7 +11,7 @@
 
 .home .hashtag {
   padding-top: 20px;
-  font-size: 20px !important;
+  font-size: 22px;
   color: #fff;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .home h1 {
-  font-size: 38px;
+  font-size: 42px;
   letter-spacing: 2px;
 }
 
@@ -34,6 +34,62 @@
 }
 
 .home p {
-  font-size: 22px;
-  letter-spacing: 2px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1005px) {
+  .home .hashtag {
+    font-size: 34px;
+  }
+
+  .home h1 { 
+    font-size: 62px;
+  }
+
+  .home h1 span {
+    font-size: 40px;
+  }
+
+  .home p { 
+    font-size: 38px;
+  }
+}
+
+@media only screen and (min-width: 1006px) {
+  .home .text-section {
+    margin-top: 0px;
+  }
+
+  .home .hashtag {
+    padding-top: 10px;
+    font-size: 38px;
+  }
+
+  .home h1 { 
+    font-size: 62px;
+  }
+
+  .home .para-txt {
+    margin-top: 0px;
+  }
+
+  .home h1 span {
+    font-size: 40px;
+  }
+
+  .home p { 
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .home {
+    background: rgba(0, 0, 0, .15) url('./../../assets/bg-desktop.JPG');
+    background-blend-mode: darken;
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
 }

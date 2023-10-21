@@ -31,17 +31,72 @@
 .video-player .text-section p {
   color: #04364A;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .video-player h3 {
   color: #04364A;
   text-align: center;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .video-player p {
   color: #04364A;
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1005px) {
+  .video-player img {
+    width: 200px;
+  }
+
+  .video-player h3 {
+    font-size: 40px;
+  }
+
+  .video-player p {
+    font-size: 44px;
+  }
+
+  .video-player .text-section p {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (min-width: 1006px) {
+  .video-player {
+    padding: 40px 160px;
+    height: 100%;
+  }
+
+  .video-player .video-responsive {
+    margin-top: 40px;
+    padding-bottom: 44.25%;
+  }
+
+  .video-player .video-responsive iframe {
+    width: 78%;
+  }
+
+  .video-player h3 {
+    font-size: 36px;
+  }
+  
+  .video-player p {
+    font-size: 40px;
+  }
+
+  .video-player .video-responsive iframe {
+    left: 10%;
+    right: 10%;
+  }
+
+  .video-player .text-section {
+    margin-top: 20px;
+  }
+
+  .video-player .text-section p {
+    font-size: 38px;
+  }
 }

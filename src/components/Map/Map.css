@@ -41,3 +41,53 @@
   top: 50%;
   position: absolute;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1005px) {
+  .mapouter .header {
+    font-size: 54px;
+  }
+
+  .mapouter .header:before {
+    width: 80px;
+    height: 4px;
+    left: 25%;
+  }
+
+  .mapouter .header:after {
+    width: 80px;
+    height: 4px;
+    right: 25%;
+  }
+}
+
+@media only screen and (min-width: 1006px) {
+  .mapouter .header {
+    font-size: 58px;
+  }
+
+  .mapouter .header:before {
+    width: 80px;
+    height: 4px;
+    left: 25%;
+  }
+
+  .mapouter .header:after {
+    width: 80px;
+    height: 4px;
+    right: 25%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .mapouter .header:before {
+    width: 80px;
+    height: 4px;
+    left: 35%;
+  }
+
+  .mapouter .header:after {
+    width: 80px;
+    height: 4px;
+    right: 35%;
+  }
+}

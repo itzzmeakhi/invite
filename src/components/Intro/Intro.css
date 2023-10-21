@@ -28,6 +28,7 @@
   width: 45%;
   border: 4px solid #fff;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   transform: rotate(-10deg);
 }
 
@@ -40,7 +41,7 @@
 
 .intro-section .bride p {
   font-family: 'Allura', sans-serif;
-  font-size: 40px;
+  font-size: 44px;
   text-shadow: 2px 2px #043a4a;
   color: #fff;
 }
@@ -49,5 +50,52 @@
   width: 45%;
   border: 4px solid #fff;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
   transform: rotate(10deg);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1005px) {
+  .intro-section .groom img {
+    width: 40%;
+  }
+
+  .intro-section .groom p {
+    font-size: 60px;
+  }
+
+  .intro-section .bride img {
+    width: 40%;
+  }
+
+  .intro-section .bride p {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 1006px) {
+  .intro-section .groom img {
+    width: 18%;
+  }
+
+  .intro-section .groom p {
+    font-size: 80px;
+  }
+
+  .intro-section .bride img {
+    width: 18%;
+  }
+
+  .intro-section .bride p {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .intro-section .groom img {
+    width: 15%;
+  }
+
+  .intro-section .bride img {
+    width: 15%;
+  }
 }
