@@ -54,7 +54,21 @@
   transform: rotate(10deg);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1005px) {
+@media only screen and (min-width: 321px) and (orientation:landscape) {
+  .intro-section {
+    height: 220vh;
+  }
+
+  .intro-section .groom img {
+    width: 25%;
+  }
+
+  .intro-section .bride img {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1005px) and (orientation:portrait) {
   .intro-section .groom img {
     width: 40%;
   }

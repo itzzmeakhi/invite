@@ -46,6 +46,12 @@
   font-size: 28px;
 }
 
+@media only screen and (min-width: 321px) and (orientation:landscape) {
+  .video-player {
+    height: 240vh;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1005px) {
   .video-player img {
     width: 200px;

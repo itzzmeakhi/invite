@@ -2,7 +2,6 @@
   color: #fff;
   text-align: center;
   background: rgba(0, 0, 0, .15) url('./../../assets/bg-mobile.JPG');
-  background-attachment: fixed;
   background-blend-mode: darken;
   height: 100vh;
   background-size: cover;
@@ -37,6 +36,30 @@
 .home p {
   font-size: 26px;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 340px) {
+  .home .hashtag {
+    font-size: 20px;
+  }
+
+  .home h1 { 
+    font-size: 34px;
+  }
+
+  .home h1 span {
+    font-size: 26px;
+  }
+
+  .home p { 
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (orientation:landscape) {
+  .home {
+    height: 220vh;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1005px) {
