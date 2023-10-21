@@ -2,12 +2,12 @@
   color: #fff;
   text-align: center;
   background: rgba(0, 0, 0, .15) url('./../../assets/bg-mobile.JPG');
+  background-attachment: fixed !important;
   background-blend-mode: darken;
   height: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .home .hashtag {
@@ -92,6 +92,6 @@
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
   }
 }
