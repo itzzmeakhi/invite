@@ -1,7 +1,6 @@
 .intro-section {
   height: 100vh;
-  background-color: #74d4eb;
-  background-image: linear-gradient(90deg, #74d4eb 0%, #9fcce6 50%, #043a4a 100%);
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
   padding: 10px 0px;
   display: flex;
   flex-direction: column;
@@ -20,13 +19,13 @@
 .intro-section .groom p {
   font-family: 'Allura', sans-serif;
   font-size: 40px;
-  text-shadow: 2px 2px #043a4a;
-  color: #fff;
+  text-shadow: 2px 2px #fff;
+  color: #043a4a;
 }
 
 .intro-section .groom img {
-  width: 45%;
-  border: 4px solid #fff;
+  width: 50%;
+  border: 2px solid #043a4a;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   transform: rotate(-10deg);
@@ -42,29 +41,29 @@
 .intro-section .bride p {
   font-family: 'Allura', sans-serif;
   font-size: 44px;
-  text-shadow: 2px 2px #043a4a;
-  color: #fff;
+  text-shadow: 2px 2px #fff;
+  color: #043a4a;
 }
 
 .intro-section .bride img {
-  width: 45%;
-  border: 4px solid #fff;
+  width: 50%;
+  border: 2px solid #043a4a;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.9);
   transform: rotate(10deg);
 }
 
-@media only screen and (min-width: 321px) and (orientation:landscape) {
+@media only screen and (min-width: 321px) and (max-width: 767px) and (orientation:landscape) {
   .intro-section {
     height: 220vh;
   }
 
   .intro-section .groom img {
-    width: 25%;
+    width: 35%;
   }
 
   .intro-section .bride img {
-    width: 25%;
+    width: 35%;
   }
 }
 
@@ -87,29 +86,34 @@
 }
 
 @media only screen and (min-width: 1006px) {
+  .intro-section {
+    padding: 100px 0px;
+    height: 100%;
+  }
+
   .intro-section .groom img {
-    width: 18%;
+    width: 25%;
   }
 
   .intro-section .groom p {
-    font-size: 80px;
+    font-size: 75px;
   }
 
   .intro-section .bride img {
-    width: 18%;
+    width: 25%;
   }
 
   .intro-section .bride p {
-    font-size: 80px;
+    font-size: 75px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .intro-section .groom img {
-    width: 15%;
+    width: 20%;
   }
 
   .intro-section .bride img {
-    width: 15%;
+    width: 20%;
   }
 }

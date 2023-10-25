@@ -56,7 +56,7 @@
   }
 }
 
-@media only screen and (min-width: 321px) and (orientation:landscape) {
+@media only screen and (min-width: 321px) and (max-width: 767px) and (orientation:landscape) {
   .home {
     height: 220vh;
   }
