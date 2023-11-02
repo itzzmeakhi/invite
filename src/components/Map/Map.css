@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .mapouter iframe {
@@ -18,8 +19,8 @@
   color: #04364A;
   text-align: center;
   position: relative;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .mapouter .header:before {
