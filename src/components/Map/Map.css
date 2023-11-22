@@ -1,9 +1,11 @@
 .mapouter {
-  height: 100vh;
-  background: #fff;
+  min-height: 100vh;
+  background: #eee;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .mapouter iframe {
@@ -17,7 +19,8 @@
   color: #04364A;
   text-align: center;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .mapouter .header:before {
@@ -42,21 +45,73 @@
   position: absolute;
 }
 
+.mapouter .events {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapouter .events .event { 
+  width: 90%;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.mapouter .events .event img {
+  width: 90px;
+}
+
+.mapouter .events .event p {
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+
+.mapouter .events .event .title {
+  font-size: 38px;
+  font-family: 'Allura', sans-serif;
+} 
+
 @media only screen and (max-width: 340px) {
   .mapouter .header {
     margin-top: 30px;
+  }
+
+  .mapouter .events .event .title {
+    font-size: 36px;
+  } 
+
+  .mapouter .header:before {
+    left: 10%;
+  }
+
+  .mapouter .header:after {
+    right: 10%;
+  }
+
+  .mapouter .events .event p {
+    font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 980px) and (orientation:landscape) {
   .mapouter {
-    height: 220vh;
+    min-height: 220vh;
+  }
+
+  .mapouter .events {
+    margin-bottom: 20px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1005px) {
   .mapouter .header {
-    font-size: 54px;
+    font-size: 48px;
   }
 
   .mapouter .header:before {
@@ -69,12 +124,25 @@
     width: 80px;
     height: 4px;
     right: 25%;
+  }
+
+  .mapouter .events {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mapouter iframe {
+    margin-top: 20px;
   }
 }
 
 @media only screen and (min-width: 1006px) {
+  .mapouter {
+    padding-top: 40px;
+  }
+
   .mapouter .header {
-    font-size: 58px;
+    font-size: 48px;
   }
 
   .mapouter .header:before {
@@ -87,6 +155,20 @@
     width: 80px;
     height: 4px;
     right: 25%;
+  }
+
+  .mapouter .events {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .mapouter .events .event {
+    width: 35%;
+  }
+
+  .mapouter iframe {
+    margin-top: 20px;
+    width: 70%;
   }
 }
 
