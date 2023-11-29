@@ -3,6 +3,8 @@ import React from 'react';
 import receptionImg from './../../assets/reception.png';
 import weddingImg from './../../assets/wedding.png';
 
+import { AddToCalendarButton } from 'add-to-calendar-button-react';
+
 import './Map.css';
 
 const Map = () => {
@@ -15,12 +17,48 @@ const Map = () => {
           <p className='title'>The Reception</p>
           <p>Friday, 15th December 2023</p>
           <p>6:00 PM Onwards</p>
+          <AddToCalendarButton
+            name="Gowtham & Vidya Reception"
+            options={['Apple','Google', "iCal|Calendar"]}
+            location="MSR Function Hall"
+            startDate="2023-12-15"
+            endDate="2023-12-15"
+            startTime="18:00"
+            endTime="23:59"
+            timeZone="Asia/Kolkata"
+            size="1|1|1"
+            pastDateHandling="hide"
+            hideCheckmark="true"
+            trigger="hover"
+            buttonStyle="text"
+            hideBranding="true"
+            styleLight="--btn-text: #04364A;"
+            inline
+          ></AddToCalendarButton>
         </div>
         <div className='event'>
           <img src={weddingImg} alt='Wedding Event Icon' />
           <p className='title'>The Wedding</p>
           <p>Saturday, 16th December 2023</p>
           <p> At 3:54 AM</p>
+          <AddToCalendarButton
+            name="Gowtham & Vidya Wedding Ceremony"
+            options={['Apple','Google', "iCal"]}
+            location="MSR Function Hall"
+            startDate="2023-12-16"
+            endDate="2023-12-16"
+            startTime="02:00"
+            endTime="06:00"
+            timeZone="Asia/Kolkata"
+            size="1|1|1"
+            pastDateHandling="hide"
+            hideCheckmark="true"
+            trigger="hover"
+            buttonStyle="text"
+            hideBranding="true"
+            styleLight="--btn-text: #04364A;"
+            inline
+          ></AddToCalendarButton>
         </div>
       </div>
       <h3 className='header'>Where</h3>

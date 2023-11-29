@@ -22,7 +22,7 @@ const VideoPlayer = () => {
           width='640' 
           height='360'
           allowFullScreen="allowFullScreen"
-          src='https://www.youtube.com/embed/scwu2MTjRMU?rel=0&controls=1&playsinline=0&modestbranding=1&cc_load_policy=0&iv_load_policy=3&autohide=0&showinfo=0&autoplay=0&enablejsapi=1'
+          src='https://www.youtube.com/embed/CJg0MmGvSno?rel=0&controls=1&playsinline=0&modestbranding=1&cc_load_policy=0&iv_load_policy=3&autohide=0&showinfo=0&autoplay=0&enablejsapi=1'
           frameborder='0'
         ></iframe>
       </div>

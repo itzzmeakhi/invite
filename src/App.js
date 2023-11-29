@@ -6,6 +6,7 @@ import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 import Intro from './components/Intro/Intro';
 import Map from './components/Map/Map';
 import Spinner from './components/Spinner/Spinner';
+import Videos from './components/Videos/Videos';
 
 import { analytics } from './firebase.config';
 
@@ -24,6 +25,7 @@ const App = () => {
         <>
           <Home />
           <VideoPlayer />
+          <Videos />
           <Intro />
           <Map />
         </>
