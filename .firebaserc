@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "gowthamwithvidya"
-  }
+    "default": "gowthamwithvidya",
+    "prod": "gowthamwithvidya"
+  },
+  "targets": {},
+  "etags": {}
 }

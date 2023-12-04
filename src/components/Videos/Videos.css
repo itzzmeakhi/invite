@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 40px 0 0;
+  padding: 40px 0px 0px 0px;
 }
 
 .videos .video-responsive {
@@ -34,7 +34,11 @@
 .videos .video {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 30px;
+}
+
+.videos .video:not(:last-child) {
+  margin-bottom: 60px;
 }
 
 @media only screen and (min-width: 321px) and (max-width: 980px) and (orientation:landscape) {

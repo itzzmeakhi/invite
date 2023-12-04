@@ -6,7 +6,7 @@ import saveTheDateImg from './../../assets/savethedate.png';
 
 import './VideoPlayer.css';
 
-const VideoPlayer = () => {
+const VideoPlayer = ({ displayCountDown, src }) => {
   return ( 
     <div className='video-player'>
       <div className='desc'>
@@ -14,7 +14,9 @@ const VideoPlayer = () => {
         <p>the countdown is on!!</p>
         <h3> 15 December, 2023 </h3>
       </div>
-      <Countdown deadline='December, 16, 2023 03:54:00 AM' />
+      { displayCountDown && (
+        <Countdown deadline='December, 16, 2023 03:54:00 AM' />
+      )}
       <div className='video-responsive'>
         <iframe
           id='savethedate'
@@ -22,7 +24,7 @@ const VideoPlayer = () => {
           width='640' 
           height='360'
           allowFullScreen="allowFullScreen"
-          src='https://www.youtube.com/embed/CJg0MmGvSno?rel=0&controls=1&playsinline=0&modestbranding=1&cc_load_policy=0&iv_load_policy=3&autohide=0&showinfo=0&autoplay=0&enablejsapi=1'
+          src={`https://www.youtube.com/embed/${src}?rel=0&controls=1&playsinline=0&modestbranding=1&cc_load_policy=0&iv_load_policy=3&autohide=0&showinfo=0&autoplay=0&enablejsapi=1`}
           frameborder='0'
         ></iframe>
       </div>
