@@ -9,10 +9,12 @@ import Map from './components/Map/Map';
 import Spinner from './components/Spinner/Spinner';
 import Videos from './components/Videos/Videos';
 import Live from './components/Live/Live';
+import CountdownStory from './components/CountdownStory/CountdownStory';
 
 import { analytics, db } from './firebase.config';
 
 import './App.css';
+
 
 const App = () => {
   const [ spinner, setSpinner ] = useState(true);
@@ -37,8 +39,7 @@ const App = () => {
     getLayoutConfig();
   }, []);
 
-  console.log('=> config', config);
-  const { live, videoplayer, videos } = config;
+  const { live, videoplayer, videos, story } = config;
   return (
     <div className='app'>
       {spinner ? <Spinner /> : (
@@ -48,6 +49,7 @@ const App = () => {
           {videoplayer?.showComponent && <VideoPlayer {...videoplayer} />}
           <Videos {...videos} />
           <Intro />
+          {story?.displayStory && <CountdownStory {...story} />}
           <Map />
         </>
       )}

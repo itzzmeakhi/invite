@@ -4,6 +4,10 @@
   }
 }
 
+.countdownstory {
+  margin-bottom: -5px;
+}
+
 .countdownstory video {
   width: 100vw;
 }

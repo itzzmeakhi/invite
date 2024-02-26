@@ -1,14 +1,20 @@
-import React from 'react';
-
-import clip from './../../assets/story.mp4';
+import React, { useState } from 'react';
 
 import './CountdownStory.css';
 
-const CountdownStory = () => {
+const CountdownStory = ({ path }) => {
+  const [videoPath, setVideoPath] = useState('');
+
+  (function (video) {
+    import(
+      `./../../assets/${video}.mp4`
+    ).then((vid) => setVideoPath(vid.default));
+  })(path);
+  
   return (
     <div className='countdownstory'>
-      <video autoPlay loop playsInline muted>
-        <source src={clip} type="video/mp4" />
+      <video key={videoPath} autoPlay loop playsInline muted>
+        <source src={videoPath} type="video/mp4" />
       </video>
     </div>
   );
